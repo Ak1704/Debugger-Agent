@@ -1,0 +1,227 @@
+# ============================================================
+# CENTRAL AI CI/CD DEBUGGER - GITIGNORE
+# ============================================================
+
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+*.egg-info/
+dist/
+build/
+
+
+# ------------------------------------------------------------
+# Virtual Environments
+# ------------------------------------------------------------
+
+.venv/
+venv/
+env/
+ENV/
+
+**/.venv/
+**/venv/
+
+
+# ------------------------------------------------------------
+# Environment Variables / Secrets
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+!.env.template
+
+
+# ------------------------------------------------------------
+# IDE / Editor
+# ------------------------------------------------------------
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+
+# ------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------
+
+*.log
+logs/
+
+docker-build.log
+
+**/docker-build.log
+
+
+# ------------------------------------------------------------
+# Cache
+# ------------------------------------------------------------
+
+cache/
+.cache/
+
+**/cache/
+**/.cache/
+
+
+# ------------------------------------------------------------
+# Generated Dataset
+# ------------------------------------------------------------
+
+# BugsInPy / BugsInPy++ generated cases
+**/dataset/cases/
+
+# Generated buggy repositories
+**/buggy_project/
+
+# Generated fixed repositories
+**/fixed_project/
+
+# Dataset temporary/workspace files
+**/dataset/tmp/
+**/dataset/temp/
+**/dataset/workspace/
+
+# Generated dataset files
+**/dataset/*.json
+**/dataset/*.jsonl
+**/dataset/*.csv
+**/dataset/*.parquet
+**/dataset/*.pkl
+**/dataset/*.pickle
+
+
+# ------------------------------------------------------------
+# BugsInPy / BugsInPy++
+# ------------------------------------------------------------
+
+BugsInPy/
+BugsInPyPP/
+bugsinpy/
+
+**/BugsInPy/
+**/BugsInPyPP/
+**/bugsinpy/
+
+# BugsInPy generated metadata/results
+bugsinpy_bug.info
+bugsinpy_requirements.txt
+bugsinpy_test.txt
+bugsinpy_test.log
+
+**/bugsinpy_bug.info
+**/bugsinpy_requirements.txt
+**/bugsinpy_test.txt
+**/bugsinpy_test.log
+
+
+# ------------------------------------------------------------
+# Benchmark Generated Results
+# ------------------------------------------------------------
+
+results/
+**/results/
+
+benchmark/results/
+benchmark/output/
+
+**/benchmark/results/
+**/benchmark/output/
+
+*.sqlite
+*.db
+
+
+# ------------------------------------------------------------
+# Docker Temporary Files
+# ------------------------------------------------------------
+
+.docker/
+docker/tmp/
+docker/workspace/
+
+**/.docker/
+**/docker/tmp/
+**/docker/workspace/
+
+
+# ------------------------------------------------------------
+# Temporary Files
+# ------------------------------------------------------------
+
+tmp/
+temp/
+
+**/tmp/
+**/temp/
+
+*.tmp
+*.bak
+
+
+# ------------------------------------------------------------
+# Generated Reports
+# ------------------------------------------------------------
+
+reports/
+**/reports/
+
+*.html
+*.xml
+
+
+# ------------------------------------------------------------
+# RAG / Vector Database Artifacts
+# ------------------------------------------------------------
+
+# Generated vector stores
+chroma/
+chromadb/
+vector_store/
+
+**/chroma/
+**/chromadb/
+**/vector_store/
+
+# Local embedding/index files
+*.faiss
+*.index
+
+
+# ------------------------------------------------------------
+# Generated Model / AI Artifacts
+# ------------------------------------------------------------
+
+*.bin
+*.pt
+*.pth
+*.safetensors
+
+
+# ------------------------------------------------------------
+# OS Files
+# ------------------------------------------------------------
+
+.DS_Store
+Thumbs.db

@@ -1,0 +1,5 @@
+docker compose -f docker/docker-compose.yml build --no-cache
+docker compose -f docker/docker-compose.yml run --rm bugsinpy-generator uname -m
+docker compose -f docker/docker-compose.yml run --rm bugsinpy-generator uname -m
+docker compose -f docker/docker-compose.yml run --rm bugsinpy-generator bash
+python dataset_generator/generator.py --project youtube-dl --bug 1

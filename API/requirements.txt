@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+pydantic>=2
+pydantic-settings
+python-dotenv
+langchain-core
+langchain-groq
+langgraph
+groq
+PyGithub
+requests
+tree-sitter
+tree-sitter-python
+sentence-transformers
+chromadb
+docker
+pytest

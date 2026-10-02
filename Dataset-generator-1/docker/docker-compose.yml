@@ -1,0 +1,19 @@
+services:
+
+  bugsinpy-generator:
+    platform: linux/amd64
+
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+
+    container_name: ci-debugger-bugsinpy
+
+    volumes:
+      - ../dataset:/workspace/dataset
+      - ../dataset_generator:/workspace/dataset_generator
+
+    working_dir: /workspace
+
+    stdin_open: true
+    tty: true
